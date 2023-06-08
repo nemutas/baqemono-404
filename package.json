@@ -1,0 +1,29 @@
+{
+  "name": "baqemono-404",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^2.6.1",
+    "gsap": "^3.12.1",
+    "lil-gui": "^0.18.1",
+    "three": "^0.153.0",
+    "three-gif-loader": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.152.1",
+    "@types/three-gif-loader": "^1.1.1",
+    "autoprefixer": "^10.4.14",
+    "prettier": "^2.8.4",
+    "prettier-plugin-astro": "^0.8.0",
+    "ress": "^5.0.2",
+    "sass": "^1.58.3",
+    "vite-plugin-glsl": "^1.1.2"
+  }
+}
