@@ -27,7 +27,7 @@ export class TCanvas {
       this.createObjects()
       setTimeout(() => {
         this.gsapAnimation()
-      }, 100)
+      }, 200)
       gl.requestAnimationFrame(this.anime)
     })
   }
@@ -75,7 +75,7 @@ export class TCanvas {
   }
 
   private createObjects() {
-    const data = this.getTextureData('found')
+    const data = this.getTextureData('404')
 
     const planesWorldGroup = new THREE.Group()
     planesWorldGroup.rotateZ(Math.PI / 24)
@@ -91,7 +91,7 @@ export class TCanvas {
         uAspect: { value: data.aspect },
         uScale: { value: data.scale },
         uMirror: { value: new THREE.Vector2(1, 1) },
-        uProgress: { value: 1 },
+        uProgress: { value: 0 },
         uMouse: { value: new THREE.Vector2() },
       },
       vertexShader,
