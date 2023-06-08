@@ -25,7 +25,9 @@ export class TCanvas {
     this.load().then(() => {
       this.init()
       this.createObjects()
-      this.gsapAnimation()
+      setTimeout(() => {
+        this.gsapAnimation()
+      }, 100)
       gl.requestAnimationFrame(this.anime)
     })
   }
@@ -119,7 +121,7 @@ export class TCanvas {
   // animation
 
   private gsapAnimation() {
-    const tl = gsap.timeline({ repeat: -1, repeatDelay: this.faceVideo.duration + 0.8 })
+    const tl = gsap.timeline({ repeat: -1, repeatDelay: this.faceVideo.duration - 0.5 })
 
     for (const key of ['404', 'file', 'not', 'found', 'hahaha', 'face']) {
       const data = this.getTextureData(key as TextureKey)
